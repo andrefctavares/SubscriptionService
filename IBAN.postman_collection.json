@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "cce3d8b3-541d-4e47-b091-a2c3313e63fc",
+		"name": "IBAN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:8443/api/v1/subscription",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "passw0rd",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"email@domain.com\",\n\t\"firstName\":\"André\",\n\t\"gender\":\"Male\",\n\t\"dateOfBirth\":\"01/01/80\",\n\t\"consent\":\"true\",\n\t\"newsletterId\":\"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8443/api/v1/subscription",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8443",
+					"path": [
+						"api",
+						"v1",
+						"subscription"
+					]
+				},
+				"description": "IBAN Subscription Service Request"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
