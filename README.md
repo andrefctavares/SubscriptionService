@@ -1,6 +1,8 @@
 # SubscriptionService
 IBAN Subscription Service
 
+## 1.0.	ARCHITECTURE
+
 The following diagrams represents the Target State Architecture and the Minimum Viable Product with a decoupled approach through containerization and MoM (Message Oriented Middleware).
 
 Among other, you cand find the following features:
@@ -17,7 +19,7 @@ The Target State Architecture represents one possible approach for the challenge
 
 ![alt text](https://i.ibb.co/bvntD1y/MVP.png)
 
-## 1.0.	DOCKER REQUIREMENTS
+## 2.0.	DOCKER REQUIREMENTS
 
 Network
 
@@ -31,7 +33,7 @@ RabbitMQ
 sudo docker run --network subscription-amqp -d --hostname rabbit --name rabbit -p 8080:15672 -p 5672:5672 -p 25676:25676 rabbitmq:3-management
 ```
 
-## 2.0.	BUILD & RUN
+## 3.0.	BUILD & RUN
 
 Subscription Service (https://github.com/andrefctavares/SubscriptionService.git)
 
