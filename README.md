@@ -1,6 +1,21 @@
 # SubscriptionService
 IBAN Subscription Service
 
+The following diagrams represents the Target State Architecture and the Minimum Viable Product with a decoupled approach through containerization and MoM (Message Oriented Middleware).
+
+Among other, you cand find the following features:
+```bash
+•	HTTPS Protocol;
+•	SSL/TLS (Self-Signed Certificate);
+•	Basic Authentication;
+•	Load Balancing;
+```
+The Target State Architecture represents one possible approach for the challenge. Due to some time limitation, I decided to implement a simpler version (MVP) that also fullfils the major requirements.
+
+
+![alt text](https://i.ibb.co/Mf0BMgj/Target-State-Architacture.png)
+
+![alt text](https://i.ibb.co/bvntD1y/MVP.png)
 
 ## 1.0.	DOCKER REQUIREMENTS
 
